@@ -65,11 +65,11 @@ public class MyString {
      */
     public static String spacedString(String str) {
    
-    if (str == "") {return " ";}  
+    if (str == "") {return "";}  
     int count = 0;
     String strSpaced = "";
     for (int i = 0; i < str.length()-1; i++) {
-    strSpaced = strSpaced + " " + str.charAt(i) + " ";
+    strSpaced = strSpaced + str.charAt(i) + " ";
     count ++;}
     strSpaced = strSpaced + str.charAt(count);
     return strSpaced;
@@ -90,7 +90,7 @@ public class MyString {
      * @return a randomly generated string, consisting of 'n' lowercase letters
      */
     public static String randomStringOfLetters(int n) {
-    if ( n == 0 ) {return " ";} 
+    if ( n == 0 ) {return "";} 
     String randomLetters = "";
     String alphabet = "abcdefghijklmnopqrstuvwxyz";
         for (int i = 0; i < n; i++) {
